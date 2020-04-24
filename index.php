@@ -5,6 +5,18 @@ require __DIR__.'/vendor/autoload.php';
 //***************************************************************
 
 /**
+START	************************* FACADE EXAMPLE ******************************
+ */
+
+$facade = new \Core\Facade\RegisterFacade(new \Core\Facade\ValidateData, new \Core\Facade\User, new \Core\Facade\Email);
+$facade->registerUser(['email' => 'ali.falahati.2010@gmail.com' , 'name'=> 'Ali Falahati', 'password' => '123321']);
+exit;
+
+/**
+END 	************************* FACADE EXAMPLE ******************************
+ */
+
+/**
 	START	************************* DECORATOR EXAMPLE ******************************
  */
 
@@ -14,4 +26,6 @@ echo ($subscription->description());
 /**
     END 	************************* DECORATOR EXAMPLE ******************************
  */
+
+
 
