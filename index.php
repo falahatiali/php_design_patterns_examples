@@ -5,6 +5,30 @@ require __DIR__.'/vendor/autoload.php';
 //***************************************************************
 
 /**
+START	************************* Abstract Factory EXAMPLE 1 ******************************
+ */
+\Core\Observer\ObserverIndex::main();
+exit;
+/**
+END 	************************* Abstract Factory EXAMPLE 1 ******************************
+ */
+
+
+
+/**
+START	************************* Abstract Factory EXAMPLE 1 ******************************
+ */
+\Core\AbstractFactory\AbstractFactoryIndex::main();
+exit;
+/**
+END 	************************* Abstract Factory EXAMPLE 1 ******************************
+ */
+
+
+
+
+
+/**
 START	************************* Adapter EXAMPLE 1 ******************************
  */
 $youtube = new \Core\Adapter\Example1\YouTubeAdapter(new \Core\Adapter\Example1\YouTube);
